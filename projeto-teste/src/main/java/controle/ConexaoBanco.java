@@ -8,7 +8,7 @@ public class ConexaoBanco {
 
 	private static Connection conexao;
 	private static ConexaoBanco instancia;
-	private static final String DATABASE = "nome-banco";
+	private static final String DATABASE = "projeto_teste";
 	private static final String USER     = "root";
 	private static final String PSW      = "aluno";
 	
