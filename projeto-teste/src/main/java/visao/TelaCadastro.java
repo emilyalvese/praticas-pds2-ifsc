@@ -21,6 +21,7 @@ public class TelaCadastro extends JFrame {
 	private JTextField txtNome;
 	private JTextField txtIdade;
 	private JLabel lblIdade;
+	private JTextField txtId;
 
 	/**
 	 * Launch the application.
@@ -50,7 +51,7 @@ public class TelaCadastro extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNome = new JLabel("Nome");
+		JLabel lblNome = new JLabel("Nome:");
 		lblNome.setBounds(10, 50, 46, 14);
 		contentPane.add(lblNome);
 		
@@ -72,7 +73,7 @@ public class TelaCadastro extends JFrame {
 				dao.inserir(p);
 			}
 		});
-		btnCadastrar.setBounds(10, 122, 89, 23);
+		btnCadastrar.setBounds(10, 192, 89, 23);
 		contentPane.add(btnCadastrar);
 		
 		txtIdade = new JTextField();
@@ -80,8 +81,17 @@ public class TelaCadastro extends JFrame {
 		txtIdade.setBounds(66, 91, 86, 20);
 		contentPane.add(txtIdade);
 		
-		lblIdade = new JLabel("Idade");
+		lblIdade = new JLabel("Idade:");
 		lblIdade.setBounds(10, 94, 46, 14);
 		contentPane.add(lblIdade);
+		
+		JLabel lblId = new JLabel("Id:");
+		lblId.setBounds(10, 142, 46, 14);
+		contentPane.add(lblId);
+		
+		txtId = new JTextField();
+		txtId.setBounds(66, 139, 86, 20);
+		contentPane.add(txtId);
+		txtId.setColumns(10);
 	}
 }
