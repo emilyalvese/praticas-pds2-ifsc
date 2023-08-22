@@ -38,6 +38,8 @@ public class PessoaDAO {
 
 		} catch (SQLException e) {
 			e.printStackTrace();
+		} finally {
+			c.fecharConexao();
 		}
 
 		return pessoas;
@@ -64,6 +66,8 @@ public class PessoaDAO {
 			return true;
 		} catch (SQLException e) {
 			e.printStackTrace();
+		} finally {
+			c.fecharConexao();
 		}
 		return false;
 	}
