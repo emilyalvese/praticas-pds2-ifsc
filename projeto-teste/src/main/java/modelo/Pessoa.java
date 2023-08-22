@@ -1,14 +1,14 @@
 package modelo;
 
 public class Pessoa {
-	private int id;
+	private int id_pessoa;
 	private String primeiro_nome;
 	private int idade;
 	public int getId() {
-		return id;
+		return id_pessoa;
 	}
 	public void setId(int id) {
-		this.id = id;
+		this.id_pessoa = id;
 	}
 	public String getPrimeiro_nome() {
 		return primeiro_nome;

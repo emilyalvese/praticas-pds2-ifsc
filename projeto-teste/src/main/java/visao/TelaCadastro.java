@@ -65,10 +65,12 @@ public class TelaCadastro extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				String nome = txtNome.getText();
 				String idade = txtIdade.getText();
+				String id = txtId.getText();
 				
 				Pessoa p = new Pessoa();
 				p.setPrimeiro_nome(nome);
 				p.setIdade(Integer.valueOf(idade));
+				p.setId(Integer.valueOf(id));
 				PessoaDAO dao = new PessoaDAO();
 				dao.inserir(p);
 			}
